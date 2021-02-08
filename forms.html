@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+        </p>
+        <p>
+            <label for="provincia">Provincia</label>
+            <select name="provincia" id="provincia">
+                <option value="Z">Zaragoza</option>
+                <option value="">Huesca</option>
+                <option value="">Teruel</option>
+            </select>
+        </p>
+        <p>
+            <textarea cols="30" rows="30">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae porro quaerat fugiat quam commodi ea, labore harum placeat debitis cumque?
+            </textarea>
+        </p>
+        <p>
+            <input type="button" value="Haga click aquí">
+            <input type="reset" value="Resetear">
+            
+        </p>
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" placeholder="Inserta Nombre" required />
+            </p>
+            <p>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" name="apellidos" value="Pérez" readonly />
+            </p>
+
+            <p>
+                <label for="provincia">Provincia</label>
+                <select name="provincia">
+                    <optgroup label="Aragon">
+                        <option value="Z">Zaragoza</option>
+                        <option>Huesca</option>
+                        <option selected>Teruel</option>
+                    </optgroup>
+
+                </select>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar" />
+            </p>
+
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

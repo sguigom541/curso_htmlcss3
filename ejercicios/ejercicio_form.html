@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio formulario</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">HOJA DE INSCRIPCION</h1><br/>
+    <h1 style="text-align: center;">EN LOS CICLOS FORMATIVOS</h1>
+    <form action="">
+        <fieldset style="background-color: #BBBBBB;">
+            <legend style="border: 1px solid black; background-color: white;">Datos Personales</legend>
+            <table>
+                <tr>
+                    <td><label for="nombre">Nombre:</label></td>
+                    <td><label for="apellidos">Apellidos:</label></td>
+                    <td><label for="dni">DNI</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="nombre" id="nombre"></td>
+                    <td><input type="text" name="apellidos" id="apellidos"></td>
+                    <td><input type="text" name="dni" id="dni"></td>
+                </tr>
+                <tr>
+                    <td><label for="localidadNac">Localidad Nacimiento</label></td>
+                    <td><label for="provincia">Provincia:</label></td>
+                    <td><label for="fechaNac">Fecha Nacimiento:</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="localidadNac" id="localidadNac"></td>
+                    <td>
+                        <select name="provincia" id="provincia">
+                            <option>Jaén</option>
+                            <option>Córdoba</option>
+                            <option>Sevilla</option>
+                            <option>Huelva</option>
+                            <option>Cádiz</option>
+                            <option>Málaga</option>
+                            <option>Granada</option>
+                            <option>Almería</option>
+                        </select>
+                    </td>
+                    <td><input type="date" name="fechaNac" id="fechaNac"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="direccion">Dirección</label></td>
+                    <td><label for="codPostal">Código Postal:</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" name="direccion" id="direccion"></td>
+                    <td><input type="text" name="codPostal" id="codPostal"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="background-color: #FFF5D2;">
+            <legend style="border: 1px solid black; background-color: white;">Forma de Acceso</legend>
+            <ul style="list-style-type: none;">
+                <li><input type="radio" name="modo" value="directo" />Directo
+                    <ul style="list-style-type: none">
+                        <li><input type="radio" name="etapa" value="logse" />Bachillerato Log Modalidad<input
+                                type="text" /></li>
+                        <li><input type="radio" name="etapa" value="experimental" />Experimental</li>
+                        <li><input type="radio" name="etapa" value="cou" />COU Opción<input type="text" /></li>
+                        <li><input type="radio" name="etapa" value="fp2" />FP2</li>
+                        <li><input type="radio" name="etapa" value="otros" />Otros (especifique) <input type="text" />
+                        </li>
+                    </ul>
+                </li>
+                <li><input type="radio" name="modo" value="prueba" />Prueba Libre</li>
+            </ul>
+        </fieldset>
+        <fieldset style="background-color: #FF8182;">
+            <legend style="border: 1px solid black; background-color: white;">Documentos Adjuntados</legend>
+            <table>
+                <tr>
+                    <td><input type="checkbox" name="docs" value="dni" />Fotocopia DNI</td>
+                    <td><input type="checkbox" name="docs" value="certificado" />Certificado Académico</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="docs" value="otros" />Otros documentos (especifique)
+                        <input type="text" \>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar Solicitud" />
+        </p>
+    </form>
+
+</body>
+
+</html>
